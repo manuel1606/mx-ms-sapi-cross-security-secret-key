@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>mx-ms-sapi-cross-security-secret-key</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>mx-cross</groupId>
+		<artifactId>mx-comp-cross</artifactId>
+		<version>2.0.0-latest</version>
+	</parent>
+
+	<dependencies>
+		<!-- Security Commons -->
+		<dependency>
+			<groupId>mx-cross</groupId>
+			<artifactId>mx-comp-cross-security-commons</artifactId>
+			<version>2.0.0-latest</version>
+		</dependency>
+		<!-- Security Commons Config -->
+		<dependency>
+			<groupId>mx-cross</groupId>
+			<artifactId>mx-comp-cross-security-commons-config</artifactId>
+			<version>2.0.0-latest</version>
+		</dependency>
+		<!-- Security Core -->
+		<dependency>
+			<groupId>mx-cross</groupId>
+			<artifactId>mx-comp-cross-security-core</artifactId>
+			<version>2.0.0-latest</version>
+		</dependency>
+		<!-- Security DB -->
+		<dependency>
+			<groupId>mx-cross</groupId>
+			<artifactId>mx-comp-cross-security-db</artifactId>
+			<version>2.0.0-latest</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

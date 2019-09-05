@@ -1,0 +1,12 @@
+spring:  
+  cloud:    config:
+      name: MX-MS-SAPI-CROSS-SECURITY-SECRET-KEY      discovery:        service-id: MX-CROSS-SECURITY-CONFIG 
+        enabled: true  profiles:    active: local
+eureka:
+  client:
+    region: default
+    registry-fetch-interval-seconds: 5
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8761/eureka/
+
+
